@@ -4,7 +4,7 @@ name: Run Basic Testes
 # em que momento será executada
 on:
     pull_request:
-        branches: [master]
+        branches: [main]
 
 jobs:
     # o que vai ser feito nessa pipeline
@@ -18,6 +18,9 @@ jobs:
             # clone do projeto
             - name: checkout do projeto
               uses: actions/checkout@v4
+
+            - name: Instalar dependencias do projeto
+              run: npm install
 
             #execução e configuração do projeto
             - name: Cypress run
