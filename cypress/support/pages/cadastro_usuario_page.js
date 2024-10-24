@@ -7,7 +7,7 @@ const elements = {
     fields:{
         name: '#user',
         email: '#email',
-        password: '#passwordX'
+        password: '#password'
     },
     messages: {
         sucessTittle: '#swal2-title',
